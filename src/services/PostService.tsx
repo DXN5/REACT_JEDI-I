@@ -1,5 +1,5 @@
 import axiosClient from '../configuration/axiosConfig'
-import PostModel from '../models/PostModel'
+import { PostModel, PostQueryModel } from '../models/PostModel'
 import { AxiosResponse } from 'axios'
 
 
@@ -17,6 +17,26 @@ class PostService {
                 return resp.data;
         })
     }
+
+    static createPost(values: PostQueryModel) {
+        return axiosClient.post<PostModel>(`/posts`, {
+            title: values.title,
+            body: values.body,
+            userId: +(new Date()), 
+        })
+    }
+
+    static changePost(id: string | undefined, values: PostQueryModel) {
+        return axiosClient.patch<PostModel>(`/posts/${id}`, {
+            title: values.title,
+            body: values.body,
+        }).then((res) => res && PostService.getPostById(id))
+    }
+
+    static deletePost(id: string | undefined) {
+        axiosClient.delete<PostModel>(`/posts/${id}`)
+    }
+
 }
 
 export default PostService

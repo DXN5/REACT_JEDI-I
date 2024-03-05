@@ -1,0 +1,52 @@
+.BoxComment {
+  border: 3px solid #000;
+  margin-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: 0.25s;
+  user-select: none;
+  border-radius: 4px;
+}
+.CommentHeader {
+  font: 25px "Fira Sans", sans-serif !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+.Comment {
+  font: 20px "Fira Sans", sans-serif !important;
+  margin-top: 16px !important;
+}
+
+.CommentsTopHeader {  
+  font: 70px "Fira Sans", sans-serif !important; 
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.CommentsTopBox {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black solid 3px;
+  margin-top: 20px !important;
+  margin-bottom: 30px !important;
+  padding-right: 10px;
+}
+
+.NavBackComments{
+  text-decoration: none;
+  color: #000;
+  transition: 0.25s;
+  padding-left: 10px;
+}
+
+.NavBackComments:hover {
+  color: #61a8c7;
+  padding-left: 0;
+}
+
+.BackIconComments {
+  height: 80px !important;
+  width: 80px !important;  
+}

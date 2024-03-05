@@ -1,0 +1,74 @@
+.mainButton {
+  font: 15px "Fira Sans", sans-serif !important;
+  padding: 5px 15px;
+  border: 2px solid #000;
+  color: #000;            
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.mainButton:hover {
+  background-color: #61a8c7;  
+  box-shadow: 3px 5px 5px -1px #000;
+}
+
+.UserCardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listButtons {
+  color: #000 !important;  
+}
+
+.listButtons:hover {
+  background-color: #61a8c7;  
+  background: none;
+}
+
+.MainHeader {
+  font: 80px "Fira Sans", sans-serif !important;
+  margin-top: 5vh;
+  user-select: none;
+}
+
+.MainComment {
+  font: 40px "Fira Sans", sans-serif !important;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  user-select: none;
+}
+
+.userCard {
+padding-top: 25px;
+border-radius: 4px;
+transition: 0.7s;
+user-select: none;
+overflow: hidden;
+position: relative;
+background: linear-gradient(to left bottom, #61a8c7, #fff);
+}
+
+.userCard p {
+   font: 18px "Fira Sans", sans-serif !important;
+   text-align: left;
+   margin-top: 7px;
+   padding-left: 15px;
+}
+
+.userCardDisabled {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  }
+
+.ContainerMainButtons {
+  width: 212px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-top: 25px;
+}

@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  height: auto;
+}
+
+.snackSuccess {
+  background: linear-gradient(to right top, #61a8c7, #fff) !important;
+  color: #000 !important;
+  font: 20px "Fira Sans", sans-serif !important;
+  font-weight: 500 !important;
+  user-select: none !important;
+}
