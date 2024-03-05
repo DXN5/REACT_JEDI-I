@@ -10,6 +10,7 @@ interface Props {
 }
 
 const Post: FC<Props> = ({ title, body, postId }) => {
+  
   return (
     <NavLink className="PostNavlink" to={`/post/${postId}`}>
       <Box className="Post" >
